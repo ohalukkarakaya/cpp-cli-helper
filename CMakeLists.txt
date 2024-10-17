@@ -3,6 +3,9 @@ project(cpp_help)
 
 set(CMAKE_CXX_STANDARD 17)
 
+file(COPY ${CMAKE_SOURCE_DIR}/utils/template_project
+     DESTINATION ${CMAKE_BINARY_DIR}/)
+
 add_executable(
   cpp_help 
 
@@ -22,4 +25,19 @@ add_executable(
 
   development/command/include/commands.h
   development/command/src/commands.cpp
+
+  development/commands/help/include/help.h
+  development/commands/help/src/help.cpp
+
+  development/commands/create_project/include/create_project.h
+  development/commands/create_project/src/create_project.cpp
+
+  development/commands/create_project/copy_template_project/include/copy_template_project.h
+  development/commands/create_project/copy_template_project/src/copy_template_project.cpp
+
+  development/commands/create_project/update_cmake_project_name/include/update_cmake_project_name.h
+  development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp
 )
+
+install(DIRECTORY utils/template_project/ DESTINATION ./)
+

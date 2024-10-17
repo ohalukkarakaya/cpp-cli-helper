@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.30.2/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.30.2/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.30.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.30.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.30.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.30.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/build/CMakeFiles /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/build//CMakeFiles/progress.marks
@@ -152,6 +197,102 @@ development/command/src/commands.s: development/command/src/commands.cpp.s
 development/command/src/commands.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/command/src/commands.cpp.s
 .PHONY : development/command/src/commands.cpp.s
+
+development/commands/create_project/copy_template_project/src/copy_template_project.o: development/commands/create_project/copy_template_project/src/copy_template_project.cpp.o
+.PHONY : development/commands/create_project/copy_template_project/src/copy_template_project.o
+
+# target to build an object file
+development/commands/create_project/copy_template_project/src/copy_template_project.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/create_project/copy_template_project/src/copy_template_project.cpp.o
+.PHONY : development/commands/create_project/copy_template_project/src/copy_template_project.cpp.o
+
+development/commands/create_project/copy_template_project/src/copy_template_project.i: development/commands/create_project/copy_template_project/src/copy_template_project.cpp.i
+.PHONY : development/commands/create_project/copy_template_project/src/copy_template_project.i
+
+# target to preprocess a source file
+development/commands/create_project/copy_template_project/src/copy_template_project.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/create_project/copy_template_project/src/copy_template_project.cpp.i
+.PHONY : development/commands/create_project/copy_template_project/src/copy_template_project.cpp.i
+
+development/commands/create_project/copy_template_project/src/copy_template_project.s: development/commands/create_project/copy_template_project/src/copy_template_project.cpp.s
+.PHONY : development/commands/create_project/copy_template_project/src/copy_template_project.s
+
+# target to generate assembly for a file
+development/commands/create_project/copy_template_project/src/copy_template_project.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/create_project/copy_template_project/src/copy_template_project.cpp.s
+.PHONY : development/commands/create_project/copy_template_project/src/copy_template_project.cpp.s
+
+development/commands/create_project/src/create_project.o: development/commands/create_project/src/create_project.cpp.o
+.PHONY : development/commands/create_project/src/create_project.o
+
+# target to build an object file
+development/commands/create_project/src/create_project.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/create_project/src/create_project.cpp.o
+.PHONY : development/commands/create_project/src/create_project.cpp.o
+
+development/commands/create_project/src/create_project.i: development/commands/create_project/src/create_project.cpp.i
+.PHONY : development/commands/create_project/src/create_project.i
+
+# target to preprocess a source file
+development/commands/create_project/src/create_project.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/create_project/src/create_project.cpp.i
+.PHONY : development/commands/create_project/src/create_project.cpp.i
+
+development/commands/create_project/src/create_project.s: development/commands/create_project/src/create_project.cpp.s
+.PHONY : development/commands/create_project/src/create_project.s
+
+# target to generate assembly for a file
+development/commands/create_project/src/create_project.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/create_project/src/create_project.cpp.s
+.PHONY : development/commands/create_project/src/create_project.cpp.s
+
+development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.o: development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.o
+.PHONY : development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.o
+
+# target to build an object file
+development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.o
+.PHONY : development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.o
+
+development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.i: development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.i
+.PHONY : development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.i
+
+# target to preprocess a source file
+development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.i
+.PHONY : development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.i
+
+development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.s: development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.s
+.PHONY : development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.s
+
+# target to generate assembly for a file
+development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.s
+.PHONY : development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.s
+
+development/commands/help/src/help.o: development/commands/help/src/help.cpp.o
+.PHONY : development/commands/help/src/help.o
+
+# target to build an object file
+development/commands/help/src/help.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/help/src/help.cpp.o
+.PHONY : development/commands/help/src/help.cpp.o
+
+development/commands/help/src/help.i: development/commands/help/src/help.cpp.i
+.PHONY : development/commands/help/src/help.i
+
+# target to preprocess a source file
+development/commands/help/src/help.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/help/src/help.cpp.i
+.PHONY : development/commands/help/src/help.cpp.i
+
+development/commands/help/src/help.s: development/commands/help/src/help.cpp.s
+.PHONY : development/commands/help/src/help.s
+
+# target to generate assembly for a file
+development/commands/help/src/help.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/help/src/help.cpp.s
+.PHONY : development/commands/help/src/help.cpp.s
 
 development/locale/src/load_en_static_texts.o: development/locale/src/load_en_static_texts.cpp.o
 .PHONY : development/locale/src/load_en_static_texts.o
@@ -280,11 +421,27 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... cpp_help"
 	@echo "... development/command/src/commands.o"
 	@echo "... development/command/src/commands.i"
 	@echo "... development/command/src/commands.s"
+	@echo "... development/commands/create_project/copy_template_project/src/copy_template_project.o"
+	@echo "... development/commands/create_project/copy_template_project/src/copy_template_project.i"
+	@echo "... development/commands/create_project/copy_template_project/src/copy_template_project.s"
+	@echo "... development/commands/create_project/src/create_project.o"
+	@echo "... development/commands/create_project/src/create_project.i"
+	@echo "... development/commands/create_project/src/create_project.s"
+	@echo "... development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.o"
+	@echo "... development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.i"
+	@echo "... development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.s"
+	@echo "... development/commands/help/src/help.o"
+	@echo "... development/commands/help/src/help.i"
+	@echo "... development/commands/help/src/help.s"
 	@echo "... development/locale/src/load_en_static_texts.o"
 	@echo "... development/locale/src/load_en_static_texts.i"
 	@echo "... development/locale/src/load_en_static_texts.s"

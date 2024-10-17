@@ -7,8 +7,11 @@ void process_command(std::string command)
 
     switch (cmd)
     {
+    case HELP:
+        help();
+        break;
     case CREATE_PROJECT:
-        std::cout << "Proje Oluştur" << std::endl;
+        create_project();
         break;
     case BUILD:
         std::cout << "Build" << std::endl;
