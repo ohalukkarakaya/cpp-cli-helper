@@ -958,7 +958,10 @@ CMakeFiles/cpp_help.dir/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/unistd.h \
   /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/commands.h \
   /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../../model/command/include/command_type.h \
-  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/create_project/include/create_project.h \
+  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../locale/include/locale.h \
+  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../locale/include/load_en_static_texts.h \
+  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../locale/include/load_tr_static_texts.h \
+  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/build/include/build.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/filesystem \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
@@ -978,9 +981,11 @@ CMakeFiles/cpp_help.dir/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/sstream \
+  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/build/include/../../../../model/command/include/command_type.h \
+  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/build/include/../../../locale/include/locale.h \
+  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/create_project/include/create_project.h \
   /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/create_project/include/../../../locale/include/locale.h \
-  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/create_project/include/../../../locale/include/load_en_static_texts.h \
-  /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/create_project/include/../../../locale/include/load_tr_static_texts.h \
   /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/create_project/include/../copy_template_project/include/copy_template_project.h \
   /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/create_project/include/../copy_template_project/include/../../../../locale/include/locale.h \
   /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/command/include/../../commands/create_project/include/../update_cmake_project_name/include/update_cmake_project_name.h \

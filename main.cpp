@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     }
 
     // Run Main Logic
-    process_command(argv[1]);
+    process_command(argc, argv);
 
     return 0;
 }

@@ -8,9 +8,6 @@ enum Command
     HELP,
     CREATE_PROJECT,
     BUILD,
-    BUILD_AND_RUN,
-    BUILD_DEBUG,
-    BUILD_DEBUG_AND_RUN,
     UNDEFINED,
     COMMAND_COUNT,
 };

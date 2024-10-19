@@ -15,7 +15,13 @@ void help()
 
         if (lower_command != "help" && lower_command != "undefined")
         {
-            std::cout << lower_command << std::endl;
+            if (lower_command == "build")
+            {
+                std::string flag_list = " [ \"--debug\", \"--run\" ]";
+                lower_command += flag_list;
+            }
+
+            std::cout << "- " << lower_command << std::endl;
         }
     }
 

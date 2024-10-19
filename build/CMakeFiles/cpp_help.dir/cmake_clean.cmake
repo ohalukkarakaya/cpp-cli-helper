@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpp_help.dir/development/command/src/commands.cpp.o"
   "CMakeFiles/cpp_help.dir/development/command/src/commands.cpp.o.d"
+  "CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o"
+  "CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o.d"
   "CMakeFiles/cpp_help.dir/development/commands/create_project/copy_template_project/src/copy_template_project.cpp.o"
   "CMakeFiles/cpp_help.dir/development/commands/create_project/copy_template_project/src/copy_template_project.cpp.o.d"
   "CMakeFiles/cpp_help.dir/development/commands/create_project/src/create_project.cpp.o"

@@ -198,6 +198,30 @@ development/command/src/commands.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/command/src/commands.cpp.s
 .PHONY : development/command/src/commands.cpp.s
 
+development/commands/build/src/build.o: development/commands/build/src/build.cpp.o
+.PHONY : development/commands/build/src/build.o
+
+# target to build an object file
+development/commands/build/src/build.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o
+.PHONY : development/commands/build/src/build.cpp.o
+
+development/commands/build/src/build.i: development/commands/build/src/build.cpp.i
+.PHONY : development/commands/build/src/build.i
+
+# target to preprocess a source file
+development/commands/build/src/build.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.i
+.PHONY : development/commands/build/src/build.cpp.i
+
+development/commands/build/src/build.s: development/commands/build/src/build.cpp.s
+.PHONY : development/commands/build/src/build.s
+
+# target to generate assembly for a file
+development/commands/build/src/build.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_help.dir/build.make CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.s
+.PHONY : development/commands/build/src/build.cpp.s
+
 development/commands/create_project/copy_template_project/src/copy_template_project.o: development/commands/create_project/copy_template_project/src/copy_template_project.cpp.o
 .PHONY : development/commands/create_project/copy_template_project/src/copy_template_project.o
 
@@ -430,6 +454,9 @@ help:
 	@echo "... development/command/src/commands.o"
 	@echo "... development/command/src/commands.i"
 	@echo "... development/command/src/commands.s"
+	@echo "... development/commands/build/src/build.o"
+	@echo "... development/commands/build/src/build.i"
+	@echo "... development/commands/build/src/build.s"
 	@echo "... development/commands/create_project/copy_template_project/src/copy_template_project.o"
 	@echo "... development/commands/create_project/copy_template_project/src/copy_template_project.i"
 	@echo "... development/commands/create_project/copy_template_project/src/copy_template_project.s"

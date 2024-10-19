@@ -209,6 +209,20 @@ CMakeFiles/cpp_help.dir/development/commands/create_project/update_cmake_project
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpp_help.dir/development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp -o CMakeFiles/cpp_help.dir/development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.s
 
+CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o: CMakeFiles/cpp_help.dir/flags.make
+CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o: /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/commands/build/src/build.cpp
+CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o: CMakeFiles/cpp_help.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o -MF CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o.d -o CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o -c /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/commands/build/src/build.cpp
+
+CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/commands/build/src/build.cpp > CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.i
+
+CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/development/commands/build/src/build.cpp -o CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.s
+
 # Object files for target cpp_help
 cpp_help_OBJECTS = \
 "CMakeFiles/cpp_help.dir/main.cpp.o" \
@@ -220,7 +234,8 @@ cpp_help_OBJECTS = \
 "CMakeFiles/cpp_help.dir/development/commands/help/src/help.cpp.o" \
 "CMakeFiles/cpp_help.dir/development/commands/create_project/src/create_project.cpp.o" \
 "CMakeFiles/cpp_help.dir/development/commands/create_project/copy_template_project/src/copy_template_project.cpp.o" \
-"CMakeFiles/cpp_help.dir/development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.o"
+"CMakeFiles/cpp_help.dir/development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.o" \
+"CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o"
 
 # External object files for target cpp_help
 cpp_help_EXTERNAL_OBJECTS =
@@ -235,9 +250,10 @@ cpp_help: CMakeFiles/cpp_help.dir/development/commands/help/src/help.cpp.o
 cpp_help: CMakeFiles/cpp_help.dir/development/commands/create_project/src/create_project.cpp.o
 cpp_help: CMakeFiles/cpp_help.dir/development/commands/create_project/copy_template_project/src/copy_template_project.cpp.o
 cpp_help: CMakeFiles/cpp_help.dir/development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp.o
+cpp_help: CMakeFiles/cpp_help.dir/development/commands/build/src/build.cpp.o
 cpp_help: CMakeFiles/cpp_help.dir/build.make
 cpp_help: CMakeFiles/cpp_help.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable cpp_help"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/o.halukkarakaya/Desktop/dosyalar/projeler/10_2024/cpp-cli-helper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable cpp_help"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_help.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

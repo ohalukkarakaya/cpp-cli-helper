@@ -37,6 +37,9 @@ add_executable(
 
   development/commands/create_project/update_cmake_project_name/include/update_cmake_project_name.h
   development/commands/create_project/update_cmake_project_name/src/update_cmake_project_name.cpp
+
+  development/commands/build/include/build.h
+  development/commands/build/src/build.cpp
 )
 
 install(DIRECTORY utils/template_project/ DESTINATION ./)
